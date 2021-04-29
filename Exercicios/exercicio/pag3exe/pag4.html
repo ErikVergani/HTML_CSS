@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <link rel="shortcut icon" href="../vav.ico" type="image/x-icon">
+
+<body>
+    <h1>Como utilizar links</h1>
+    <h2>como linkar um CSS, ou paginas HTML</h2>
+    <p>Para linkar um arquivo CSS use: &ltlink rel="stylesheet" href="style.css"&gt </p>
+    <p>Para linkar paginas html use a tag: &lta href=""&gt&lt/a&gt , use os mesmo passos para adição de imagens, pórem
+        com seu arquivo HTML.</p>
+    <h2>Linkando sites externos</h2>
+    <p>
+        Para linkar um site externo você precisar ao invés de colocar o arquivo html no href colocar https://www. e o
+        link desejado <br>Exemplo: <br>
+        <p>clique &lta href="https://www.google.com.br" rel="external" target="_blank"&gtaqui&lt/a&gt para ir ao google
+        </p>
+        <p>Resultado: <br>Clique <a href="https://www.google.com.br">aqui</a> para ir ao google.</p>
+    </p>
+    <p>Lembre-se de colocar target="_blank" para que seja aberta em uma nova guia(apenas para sites externos) e no rel
+        external para sites externos ou self para site interno, como nossas páginas.</p>
+    <h2>LISTAS!</h2>
+    <p>Outra coisa muito importante em HTML são as listas. Existem dois tipos de listas em HTML, ordenadas e não
+        ordenadas.</p>
+    <p>Para criar uma lista ordenada precisamos da tag &ltol&gt, que significa ordered list. Após isso, utilizamos a tag
+        &ltli&gt para adicionar os itens. <strong>todos li precisam estar dentro da ol</strong></p>
+    <p>podemos personalizar diretamente na ol o tipo que quermos, basta dar um espace e adicinar type que logo nos
+        mostrará os modelos disponíveis.</p>
+    <p>Para listas não ordenadas o processo é o mesmo porém a tag é ul, unordered list</p>
+    <p>Exemplo:
+        <ol>
+            <li>Acordar</li>
+            <li>ligar pc</li>
+            <li>tomar café</li>
+        </ol>
+        <p>podemos adiconar listas dentro de listas, misturando-as ou não. nas ordenadas caso precise adicionar algo no
+            meio não haverá problemas pois o próprio código trocará a númeração.</p>
+        <h3>litas msituradas</h3>
+        <ol>
+            <li>a primeira está certa</li>
+            <li>a segunda tambem, porém vamos colcoar a 3 e a 4 aqui dentro
+                <ul type="square">
+                    <li>
+                        a terceira não é ordenada e está dentro da segunda.
+                    </li>
+                </ul>
+                <ol>
+                    <li>
+                        a quarta é ordenada e também está dentro da segunda.
+                    </li>
+                </ol>
+            <li>Para começar em um número expecifico, basta colocar após o ol start="" e definir um número, como na
+                lista a seguir, ela irá inicar no número 4</li>
+        </ol>
+        <ol start="4">
+            <li>.</li>
+        </ol>
+    </p>
+    <h2>Fonte Monoespaçada</h2>
+    <p>Para deixar uma fonte Monoespaçada, perfeita para colocar códigos, precisamos da tag pre e dentro dela a tag
+        code. <br> Exempo:</p>
+    <pre>
+      <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0;
+         print(f'O número {num} é PAR)
+          else:
+           print(f'O número {num} é ímpar')
+            print('Fim do programa')
+      </code>
+  </pre>
+    <p>Para fazer o H20 corretamente, podemos usar a tag sub, ela deixará o 2 na parte de baixo, ou sup para que o dois
+        seja elevado,<br> H<sub>2</sub>O <br> x<sup>2</sup></p>
+    <p>Para voltar a página anterior, cliquei <a href="pag3.html">aqui</a>.<br>
+        Para voltar ao ínicio, cliqui <a href="../index.html">aqui</a>.<br>
+        Caso deseje ir para o google, basta clicar <a href="https://google.com.br" target="_blank"
+            rel="external">aqui</a>!<br>
+        Para o YT <a href="https://youtube.com.br" target="_blank" rel="external">aqui</a>.
+    </p>
+
+
+</body>
+
+</html>
